@@ -1,0 +1,96 @@
+I am Satyendra Singh, a BSc Data Science student. I live in Noida, and my college is located in Film City, Sector 16A, Noida. My college name is Asian Academy of Film and Television. Satyendra's key skills include Python, Machine Learning, NLP, NNA, Power BI, and Tableau.
+This project has been developed by Satyendra Singh, a Bachelor of Science in Data Science. graduate from AAFT Noida (Asian Academy of Film & Television). located in Sector-16A, Noida, Uttar Pradesh.
+He completed his undergraduate studies with a strong academic focus on data science, machine learning, and artificial intelligence, gaining both conceptual understanding and practical experience in modern data-driven technologies.
+
+During his B.Sc. in Data Science program at AAFT Noida, Satyendra Singh acquired a strong foundation in data analysis, machine learning, Natural Language Processing (NLP), neural networks, deep learning, data visualization, and database management.
+The program emphasized hands-on learning, real-world project implementation, and industry-oriented skill development, which played a crucial role in shaping his technical proficiency.
+
+The Asian Academy of Film & Television (AAFT) is a reputed private educational institution situated in Noida Film City, Sector-16A, Noida. Established in 1993, AAFT is widely recognized for offering diverse programs across media, communication, creative arts, and emerging technology domains. In addition to its creative disciplines, AAFT offers specialized programs in Data Science and Artificial Intelligence, enabling students to develop analytical, technical, and problem-solving skills aligned with current industry demands.
+AAFT provides a dynamic academic environment that combines theoretical instruction with practical exposure, encouraging innovation, interdisciplinary learning, and application-based education.
+
+The Data Science program at AAFT Noida is supported by experienced and knowledgeable faculty members who play a vital role in guiding students through both academic concepts and hands-on implementation. The following faculty members contributed significantly to the learning and skill development of Satyendra Singh. Faculty Members in Data Science branch.
+
+Satyendra Singh possesses hands-on experience in the following areas:
+Python Programming for data processing, machine learning, and NLP
+Databases: MySQL and MongoDB for structured and unstructured data
+Machine Learning & NLP for intelligent system development
+Deep Learning & Neural Networks (NNA)
+Data Visualization: Power BI and Tableau
+Big Data fundamentals
+Cloud Computing basics for scalable solutions
+Data Structures and Algorithms (DSA) for optimized problem solving
+These skills have been effectively applied in the development of this Question Answering Chatbot, demonstrating the integration of academic learning with real-world application.
+
+Satyendra Singh is highly motivated to apply data science and artificial intelligence techniques to solve real-world problems.
+He continuously enhances his skills through academic projects, self-learning, and hands-on experimentation. He currently resides in Noida, Uttar Pradesh, and remains focused on building intelligent, data-driven solutions using modern AI technologies.
+
+The students are enrolled in the Data Science program at AAFT Noida located in the prestigious Noida Film City. This program is affiliated with Mangalyaan University a NAAC A+ accredited institution ensuring that the degree holds significant academic and professional value. The education model at AAFT is highly industry-centric with a "pedagogy of doing" that balances 70% practical training with 30% theoretical knowledge. In 2026 the curriculum is specifically designed to meet the needs of the "Agentic AI" era. Students don't just learn to build tools they learn to create autonomous digital collaborators. Python is taught by Abhishek Anand as the base language for these systems while Neema Jha provides deep insights into SQL and Natural Language Processing (NLP) which are essential for building bots that can "think" and "talk." Nitish Patil leads the specialized training in Machine Learning (ML) and NNA focusing on neural network architectures and predictive modeling. To ensure these models can work in the real world the program includes ML Pipeline training with Dheeraj Panchal and Cloud Technology with Sharada utilizing global platforms like AWS and Azure. For data storytelling and executive decision-making Gaurav Kumar provides expert instruction in Power BI and Tableau. This technical foundation is supported by the AAFT Career Resource Cell (CRC) and the "EDGE" program which focus on personality development and industry readiness. As of 2025-2026 placement rates have reached 93% with top recruiters including major media houses like Aaj Tak and Sony as well as tech-driven giants like Adani Group and KPMG with highest packages recorded at 16 LPA. The chatbot project is a prime example of this environment developed by Satyendra Singh and conceived by Shriyansh Dwivedi. Satyendra known as the Master Mind coder of Noida acts as the lead Data Scientist while Shriyansh a Data Analyst and well-known YouTuber (Jackbaba YT) brings his community expertise from the BGMI streaming world. Personally Satyendra Singh is based in Lucknow. His 90% attendance record. Shriyansh Dwivedi is based in Kanpur. Shriyansh perfect 100% attendance record. Their work reflects the current 2026 industry trend of Hyperautomation—integrating AI machine learning and data analytics into a single seamless system.
+
+Dr. Sandeep Marwah is a prominent Indian media personality, educator, and entrepreneur. He is best known as the founder of Noida Film City and the president
+He is the founder and president of the Asian Academy of Film and Television (AAFT), which is recognized as one of the top film schools globally. He also serves as the Chancellor of AAFT University of Media and Arts.
+Marwah has produced over 3,500 short films, setting multiple world records, including a Guinness World Record. He has been associated with over 4,500 TV programs and 125 feature films.
+He has been nominated as a Cultural Representative by 90 governments worldwide, fostering global diplomatic ties through art and media.
+
+Ms. Neema Jha
+Teaches MySQL, MongoDB, Natural Language Processing (NLP), and Deep Learning, focusing on database management, language understanding, and advanced neural network concepts.
+
+Mr. Nitish Patil
+Teaches Python Programming, Machine Learning, and Neural Network Architectures (NNA), emphasizing strong programming foundations and intelligent model development.
+
+Mr. Gaurav Kumar
+Teaches Power BI, Tableau, and Big Data, with a focus on data visualization, business intelligence, and large-scale data analysis.
+
+Mr. Dheeraj Panchal
+Teaches Machine Learning and Machine Learning Pipelines, covering model development, training workflows, and deployment-oriented approaches.
+
+Mr. Abhishek Anand
+Teaches Statistics, Data Structures and Algorithms (DSA), and Computer Vision, strengthening analytical thinking, algorithmic problem-solving, and image-based AI applications.
+Their combined academic guidance and mentorship significantly contributed to building strong analytical, technical, and problem-solving capabilities throughout the program.
+
+ There are.Five Faculty Members in Data Science branch.
+
+Neema Jha is associate professor in AAFT. Data science & Ai ,ML,NLP,DL,Predictive Analytics,SQL,Python.
+Neema Jha's behaviour with student is very strict and angry.
+
+Nitish Patil is professor in AAFT. Generative AI , Deep Learning , AWS.
+Nitish Patil's behaviour is very normal some times very serious while teaching.
+
+Gaurav Kumar is Professor in AAFT. Analytics Professional recently he started a gaming channel on youtube.
+Gaurav Kumar's behaviour is very good and friendly with student.
+
+Dheeraj Panchal is Professor in AAFT recently he started vlogging regular uploading reels on Instagram.
+Dheeraj Panchal's behaviour is very good friendly with student but some times very angry while teaching.
+
+Abhishek Anand is professor in AAFT.
+Abhishek Anand's behaviour is very normal.
+
+Behavior of teachers:-
+Neema Jha's behaviour with student is very strict and angry.
+
+Nitish Patil's behaviour is very normal some times very serious while teaching.
+
+Gaurav Kumar's behaviour is very good and friendly with student.
+
+Dheeraj Panchal's behaviour is very good friendly with student but some times very angry while teaching.
+
+Abhishek Anand's behaviour is very normal.
+
+
+Shriyansh Dwivedi(JACKBABA), a BSc Data Science student. I live in Noida, and my college is located in Film City, Sector 16A, Noida. My college name is Asian Academy of Film and Television. My key skills include Python, Machine Learning, NLP, NNA, Power BI, and Tableau.
+This project has been developed by Satyendra Singh, a Bachelor of Science (B.Sc.) in Data Science graduate from AAFT Noida (Asian Academy of Film & Television). located in Sector-16A, Noida, Uttar Pradesh.
+He completed his undergraduate studies with a strong academic focus on data science, machine learning, and artificial intelligence, gaining both conceptual understanding and practical experience in modern data-driven technologies.
+
+WHAT IS AAFT?
+
+AAFT is a big, famous college for people who want to work in movies, TV, and fashion. Think of it as a "Creative Hub" rather than a boring traditional college.
+Here it is in simple points:
+Location: Its main building is in Noida Film City. This is cool because it’s right next to famous news channels and movie studios.
+What they teach: If it’s creative, they teach it. This includes Acting, Filmmaking, Photography, News Anchoring, Fashion Design, and even Animation.
+Learning by Doing: They don't just make you read books. You get to use real cameras, edit in professional labs, and design clothes in real workshops.
+The "Celebrity" Factor: Since the owners are big in Bollywood, actors and directors often visit the campus to give talks. Famous actors like Arjun Kapoor actually studied there.
+Getting a Job: They help students get jobs in TV channels (like Zee or Star), production houses, or fashion brands.
+In short: If you want to be a YouTuber, a Filmmaker, or a Fashion Designer, this is the kind of place you go to get "industry ready" rather than just getting a degree.
+
+
+
+
