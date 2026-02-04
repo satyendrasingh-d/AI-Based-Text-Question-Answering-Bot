@@ -28,14 +28,13 @@
 import streamlit as st
 
 # %%
-import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
-
+import nltk
 # Downloads tokenizer models used to split text into words/sentences
 nltk.download('punkt')
 # Downloads WordNet database, required for lemmatization
@@ -106,6 +105,7 @@ f.close()
 # ## The system allows users to ask questions in natural language and returns the most relevant answer from the given text document accurately and efficiently.
 
 # %%
+
 
 
 
