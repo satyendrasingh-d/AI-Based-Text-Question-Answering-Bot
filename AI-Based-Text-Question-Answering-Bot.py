@@ -21,8 +21,7 @@
 # %% [markdown]
 # # Importing necessary Library
 
-# %%
-!pip install streamlit
+
 
 
 # %%
@@ -107,6 +106,7 @@ f.close()
 # ## The system allows users to ask questions in natural language and returns the most relevant answer from the given text document accurately and efficiently.
 
 # %%
+
 
 
 
