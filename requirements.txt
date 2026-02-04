@@ -4,5 +4,18 @@ nltk
 scikit-learn
 
 import nltk
+import string
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import pickle
+
+# Downloads tokenizer models used to split text into words/sentences
 nltk.download('punkt')
+# Downloads WordNet database, required for lemmatization
+nltk.download('wordnet')
+# Downloads common stopwords like "is", "the", "and" etc.
 nltk.download('stopwords')
+# Downloads additional tokenizer resources (sometimes needed to avoid errors)
+nltk.download('punkt_tab')
