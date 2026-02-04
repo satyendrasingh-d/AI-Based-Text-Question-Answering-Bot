@@ -55,20 +55,20 @@ def answer_question(query):
     return sentences[most_similar_index]
 
 if __name__ == "__main__":
-    print("QA Bot is running... (type 'exit' to quit)")
+    import streamlit as st
 
-    # Continuously takes user input and returns matching answers
-    while True:
-        q = input("Ask a question: ")
-        if q.lower() == "exit":
-            print("Goodbye!")
-            break
-        print("Answer:", answer_question(q))
+st.title("Satyendra's QA Chatbot")
+st.write("Ask question.")
+
+user_query = st.text_input("Ask a question:", placeholder="Write your Question Here...")
+
+if user_query:
+    answer = answer_question(user_query)
+    st.subheader("Answer:")
+    st.success(answer)
 
 # %%
-f.close()
 
-# %%
 
 
 
