@@ -18,7 +18,7 @@ nltk.download('punkt_tab')
 
 # %%
 # Reads text file content from Google Drive into memory
-with open("QA txt data.txt", "r", encoding="utf-8") as f:
+with open("QA TXT DATA (1).txt", "r", encoding="utf-8") as f:
     text_data = f.read()
 
 # Cleans text using tokenization, stopword removal, and lemmatization
@@ -69,6 +69,7 @@ if __name__ == "__main__":
 f.close()
 
 # %%
+
 
 
 
