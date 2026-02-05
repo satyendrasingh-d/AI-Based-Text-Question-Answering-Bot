@@ -80,7 +80,6 @@ Shriyansh Dwivedi(JACKBABA), a BSc Data Science student. I live in Noida, and my
 This project has been developed by Satyendra Singh, a Bachelor of Science (B.Sc.) in Data Science graduate from AAFT Noida (Asian Academy of Film & Television). located in Sector-16A, Noida, Uttar Pradesh.
 He completed his undergraduate studies with a strong academic focus on data science, machine learning, and artificial intelligence, gaining both conceptual understanding and practical experience in modern data-driven technologies.
 
-WHAT IS AAFT?
 
 AAFT is a big, famous college for people who want to work in movies, TV, and fashion. Think of it as a "Creative Hub" rather than a boring traditional college.
 Here it is in simple points:
@@ -90,6 +89,7 @@ Learning by Doing: They don't just make you read books. You get to use real came
 The "Celebrity" Factor: Since the owners are big in Bollywood, actors and directors often visit the campus to give talks. Famous actors like Arjun Kapoor actually studied there.
 Getting a Job: They help students get jobs in TV channels (like Zee or Star), production houses, or fashion brands.
 In short: If you want to be a YouTuber, a Filmmaker, or a Fashion Designer, this is the kind of place you go to get "industry ready" rather than just getting a degree.
+
 
 
 
