@@ -57,7 +57,7 @@ def answer_question(query):
 if __name__ == "__main__":
     import streamlit as st
 
-st.title("Satyendra's & Shriyansh Chatbot")
+st.title("AI Based Text Question Answering Bot")
 
 user_query = st.text_input("Ask a question:", placeholder="Write your Question Here...")
 
@@ -67,6 +67,7 @@ if user_query:
     st.success(answer)
 
 # %%
+
 
 
 
