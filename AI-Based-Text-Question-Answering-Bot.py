@@ -68,21 +68,19 @@ def difficulty(text):
     return "Hard"
 
 # %%
-def ask_from_document(document_text):
-  while True:
-    user_question = input("Please ask a question about the document (type 'quit' to exit): ")
-    if user_question.lower() == 'quit':
-      break
-    if user_question:
-      answer = answer_question(document_text, user_question)
-      print(f"Answer: {answer}")
-    else:
-      print("Please enter a question.")
+st.title('AI Question Answering Bot')
+user_query = st.text_input('Please ask a question about the document:')
 
-# Example of how to use it with your 'text' variable:
-ask_from_document(text)
+if user_query:
+    if user_query.lower() == 'quit':
+        st.info('Chat Ended Refresh to start again.')
+    else:
+        with st.spinner('Searching for Answer....'):
+            ans = answer_question(text, user_query)
+            st.success(f'Answer:{ans}')
 
 # %%
+
 
 
 
