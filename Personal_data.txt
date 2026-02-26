@@ -1,0 +1,279 @@
+SECTION 1 — STUDENT INFORMATION
+
+Satyendra Singh is a BSc Data Science student.
+Satyendra Singh studies at Asian Academy of Film and Television AAFT Noida.
+
+Satyendra Singh lives in Noida Uttar Pradesh.
+
+Satyendra Singh is interested in Artificial Intelligence.
+Satyendra Singh is interested in Machine Learning.
+Satyendra Singh is interested in NLP.
+
+Satyendra Singh knows Python programming.
+Satyendra Singh knows Machine Learning.
+Satyendra Singh knows Deep Learning.
+Satyendra Singh knows Neural Networks.
+
+Satyendra Singh knows Power BI.
+Satyendra Singh knows Tableau.
+
+Satyendra Singh knows MySQL.
+Satyendra Singh knows MongoDB.
+
+Satyendra Singh built a chatbot project.
+The chatbot answers questions from text.
+
+Satyendra Singh builds AI projects.
+Satyendra Singh practices programming daily.
+
+SECTION 2 — SHRIYANSH INFORMATION
+
+Shriyansh Dwivedi is a Data Science student.
+
+Shriyansh Dwivedi studies at AAFT Noida.
+
+Shriyansh Dwivedi lives in Noida.
+
+Shriyansh Dwivedi is interested in Artificial Intelligence.
+
+Shriyansh Dwivedi knows Python.
+Shriyansh Dwivedi knows Machine Learning.
+
+Shriyansh Dwivedi collaborates with Satyendra Singh.
+
+Shriyansh Dwivedi helps in projects.
+
+Jackbaba is the nickname of Shriyansh Dwivedi.
+
+Jackbaba is a BGMI content creator.
+
+Jackbaba is a YouTuber.
+
+Jackbaba helps students.
+
+Jackbaba motivates students.
+
+SECTION 3 — AAFT INFORMATION
+
+Asian Academy of Film and Television is called AAFT.
+
+AAFT is located in Film City Sector 16A Noida.
+
+AAFT is a private institution.
+
+AAFT provides practical education.
+
+AAFT provides computer labs.
+
+AAFT provides smart classrooms.
+
+AAFT provides industry training.
+
+AAFT provides practical learning.
+
+AAFT teaches Data Science.
+
+AAFT teaches Artificial Intelligence.
+
+AAFT teaches Machine Learning.
+
+SECTION 4 — FACULTY INFORMATION
+
+Neema Jha teaches NLP.
+Neema Jha teaches MongoDB.
+Neema Jha teaches Deep Learning.
+
+Neema Jha behavior is strict.
+
+Nitish Patil teaches Python.
+Nitish Patil teaches Machine Learning.
+Nitish Patil teaches Neural Networks.
+
+Nitish Patil behavior is normal.
+
+Gaurav Kumar teaches Power BI.
+Gaurav Kumar teaches Tableau.
+
+Gaurav Kumar behavior is friendly.
+
+Dheeraj Panchal teaches ML Pipelines.
+Dheeraj Panchal teaches Machine Learning.
+
+Dheeraj Panchal behavior is friendly.
+
+Abhishek Anand teaches Statistics.
+Abhishek Anand teaches DSA.
+Abhishek Anand teaches Computer Vision.
+
+Abhishek Anand behavior is normal.
+
+Professors guide students.
+Professors help students.
+
+Students respect professors.
+
+SECTION 5 — DATA SCIENCE KNOWLEDGE
+
+Artificial Intelligence is future technology.
+
+Machine Learning is part of AI.
+
+Deep Learning uses Neural Networks.
+
+Neural Networks process data.
+
+Natural Language Processing works with text.
+
+NLP helps chatbots.
+
+Chatbots answer questions.
+
+TF IDF calculates word importance.
+
+Cosine similarity compares sentences.
+
+Datasets are important.
+
+Large datasets improve models.
+
+Projects improve experience.
+
+Programming requires practice.
+
+Python is popular for AI.
+
+Power BI creates dashboards.
+
+Tableau creates dashboards.
+
+SQL stores data.
+
+MongoDB stores data.
+
+Cloud computing stores data online.
+
+SECTION 6 — XCL EVENT
+
+Xtreme Champion League is called XCL.
+
+XCL is a gaming event at AAFT.
+
+XCL includes gaming competitions.
+
+XCL includes cosplay competition.
+
+Students participate in XCL.
+
+Students enjoy XCL.
+
+The XCL prize pool is about one lakh rupees.
+
+Valorant tournament winner prize is 25000 rupees.
+
+Valorant runner up prize is 12500 rupees.
+
+BGMI winner prize is 20000 rupees.
+
+BGMI runner up prize is 10000 rupees.
+
+FIFA winner prize is 5000 rupees.
+
+Tekken winner prize is 5000 rupees.
+
+Cosplay winner prize is 5000 rupees.
+
+Ashish Manocha is the main host.
+
+Ridhima helps organize XCL.
+
+Vaibhav helps organize XCL.
+
+Vidit helps organize XCL.
+
+Valorant is a team game.
+
+BGMI is a mobile game.
+
+Tekken is a fighting game.
+
+Cosplay is costume competition.
+
+Students dress as characters.
+
+SECTION 7 — AI SUMMIT
+
+India AI Impact Summit 2026 happened in Delhi.
+
+The AI summit happened at Bharat Mandapam.
+
+The AI summit happened in February 2026.
+
+The summit theme was Welfare for All.
+
+The summit focused on AI development.
+
+The summit discussed AI future.
+
+The summit discussed AI safety.
+
+Prime Minister Narendra Modi opened the summit.
+
+The summit discussed IndiaAI Mission.
+
+IndiaAI Mission supports AI development.
+
+The summit had many companies.
+
+Google participated in summit.
+
+OpenAI participated in summit.
+
+Microsoft participated in summit.
+
+Nvidia participated in summit.
+
+Meta participated in summit.
+
+Adobe participated in summit.
+
+Reliance participated in summit.
+
+Tata participated in summit.
+
+Infosys participated in summit.
+
+The summit had exhibitions.
+
+Health pavilion showed AI healthcare.
+
+Agriculture pavilion showed AI farming.
+
+Students attended summit.
+
+Students learned AI.
+
+Students gained knowledge.
+
+SECTION 8 — GENERAL LEARNING
+
+Students attend workshops.
+
+Students attend seminars.
+
+Workshops improve skills.
+
+Seminars improve knowledge.
+
+Students learn new technologies.
+
+Technology changes fast.
+
+Students must learn continuously.
+
+Experience improves career.
+
+AI projects improve jobs.
+
+Hard work leads to success.
+
+Consistency improves learning.
