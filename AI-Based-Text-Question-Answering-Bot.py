@@ -1,6 +1,7 @@
 # %%
 import nltk
 import string
+import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 nltk.download('punkt')
@@ -80,6 +81,7 @@ if user_query:
             st.success(f'Answer:{ans}')
 
 # %%
+
 
 
 
