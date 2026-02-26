@@ -71,23 +71,14 @@ def difficulty(text):
 # %%
 # Streamlit Interface
 st.title("Smart AI Research Assistant")
-file = st.file_uploader("Upload PDF File")
 if file is not None:
-    text = read_pdf(file)
-    text = clean_text(text)
-    st.subheader("Summary")
-    st.write(summarize(text))
-    st.subheader("Keywords")
-    st.write(extract_keywords(text))
-    st.subheader("Difficulty Level")
-    st.write(difficulty(text))
-    st.subheader("Ask Question")
     question = st.text_input("Enter Question")
     if question:
         answer = answer_question(text,question)
         st.write("Answer:")
         st.write(answer)
 # %%
+
 
 
 
