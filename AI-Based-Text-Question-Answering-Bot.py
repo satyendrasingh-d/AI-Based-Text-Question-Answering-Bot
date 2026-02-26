@@ -69,18 +69,26 @@ def difficulty(text):
     return "Hard"
 
 # %%
-st.title('AI Question Answering Bot')
-user_query = st.text_input('Please ask a question about the document:')
-
-if user_query:
-    if user_query.lower() == 'quit':
-        st.info('Chat Ended Refresh to start again.')
-    else:
-        with st.spinner('Searching for Answer....'):
-            ans = answer_question(text, user_query)
-            st.success(f'Answer:{ans}')
-
+# Streamlit Interface
+st.title("Smart AI Research Assistant")
+file = st.file_uploader("Upload PDF File")
+if file is not None:
+    text = read_pdf(file)
+    text = clean_text(text)
+    st.subheader("Summary")
+    st.write(summarize(text))
+    st.subheader("Keywords")
+    st.write(extract_keywords(text))
+    st.subheader("Difficulty Level")
+    st.write(difficulty(text))
+    st.subheader("Ask Question")
+    question = st.text_input("Enter Question")
+    if question:
+        answer = answer_question(text,question)
+        st.write("Answer:")
+        st.write(answer)
 # %%
+
 
 
 
