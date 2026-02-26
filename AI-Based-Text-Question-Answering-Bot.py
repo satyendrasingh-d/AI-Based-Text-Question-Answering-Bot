@@ -71,13 +71,16 @@ def difficulty(text):
 # %%
 # Streamlit Interface
 st.title("Smart AI Research Assistant")
-if file is not None:
-    question = st.text_input("Enter Question")
-    if question:
-        answer = answer_question(text,question)
-        st.write("Answer:")
-        st.write(answer)
+user_query = st.text_input("Enter Question about the Document:  ")
+if user_query:
+    if user_query.lower() == 'quit':
+        st.info('Chat Ended Refresh to start again.')
+    else:
+        with st.spinner('Searching for Answer....'):
+            ans = answer_question(text, user_query)
+            st.success(f'Answer: {ans}')
 # %%
+
 
 
 
