@@ -11,7 +11,7 @@ nltk.download('punkt_tab')
 #drive.mount('/content/drive')
 
 # %%
-with open("/content/Personal_data.txt", "r", encoding="utf-8") as f:
+with open("Personal_data.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 # %%
@@ -21,7 +21,7 @@ def read_text_file(file_path):
     return text
 
 # How to use it:
-my_text = read_text_file("/content/Personal_data.txt")
+my_text = read_text_file("Personal_data.txt")
 
 # %%
 from os import sendfile
@@ -83,6 +83,7 @@ def ask_from_document(document_text):
 ask_from_document(text)
 
 # %%
+
 
 
 
