@@ -1,4 +1,3 @@
-SECTION 1 — STUDENT INFORMATION
 
 Satyendra Singh is a BSc Data Science student.
 Satyendra Singh studies at Asian Academy of Film and Television AAFT Noida.
@@ -26,8 +25,6 @@ The chatbot answers questions from text.
 Satyendra Singh builds AI projects.
 Satyendra Singh practices programming daily.
 
-SECTION 2 — SHRIYANSH INFORMATION
-
 Shriyansh Dwivedi is a Data Science student.
 
 Shriyansh Dwivedi studies at AAFT Noida.
@@ -53,7 +50,6 @@ Jackbaba helps students.
 
 Jackbaba motivates students.
 
-SECTION 3 — AAFT INFORMATION
 
 Asian Academy of Film and Television is called AAFT.
 
@@ -77,10 +73,11 @@ AAFT teaches Artificial Intelligence.
 
 AAFT teaches Machine Learning.
 
-SECTION 4 — FACULTY INFORMATION
 
 Neema Jha teaches NLP.
+
 Neema Jha teaches MongoDB.
+
 Neema Jha teaches Deep Learning.
 
 Neema Jha behavior is strict.
@@ -112,7 +109,6 @@ Professors help students.
 
 Students respect professors.
 
-SECTION 5 — DATA SCIENCE KNOWLEDGE
 
 Artificial Intelligence is future technology.
 
@@ -152,7 +148,6 @@ MongoDB stores data.
 
 Cloud computing stores data online.
 
-SECTION 6 — XCL EVENT
 
 Xtreme Champion League is called XCL.
 
@@ -200,7 +195,6 @@ Cosplay is costume competition.
 
 Students dress as characters.
 
-SECTION 7 — AI SUMMIT
 
 India AI Impact Summit 2026 happened in Delhi.
 
