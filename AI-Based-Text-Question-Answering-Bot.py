@@ -1,5 +1,7 @@
 import streamlit as st
 import re
+import string
+import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -38,12 +40,12 @@ header {visibility:hidden;}
 .subtitle{
     text-align:center;
     color:#94A3B8;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 [data-testid="stChatMessage"]{
     border-radius:15px;
-    padding:10px;
+    padding:12px;
 }
 
 </style>
@@ -57,21 +59,40 @@ AI Research Assistant
 </div>
 
 <div class="subtitle">
-Document Question Answering System
+Intelligent Document Question Answering System
 </div>
 """, unsafe_allow_html=True)
 
 # ---------------- LOAD DOCUMENT ----------------
 
 with open("Personal_data.txt","r",encoding="utf-8") as f:
-    text = f.read()
+    document = f.read()
 
-# ---------------- SENTENCE SPLITTER ----------------
+# ---------------- HELPERS ----------------
+
+def clean_text(text):
+
+    text = text.lower()
+
+    for p in string.punctuation:
+        text = text.replace(p," ")
+
+    text = re.sub(r"\s+"," ",text)
+
+    return text.strip()
 
 def split_sentences(text):
-    return re.split(r'(?<=[.!?])\s+', text)
 
-# ---------------- QA FUNCTION ----------------
+    sentences = re.split(
+        r'(?<=[.!?])\s+',
+        text
+    )
+
+    sentences = [s.strip() for s in sentences if s.strip()]
+
+    return list(dict.fromkeys(sentences))
+
+# ---------------- QA ENGINE ----------------
 
 def answer_question(document, question):
 
@@ -80,44 +101,106 @@ def answer_question(document, question):
         "hello":"Hello. What would you like to know?",
         "hey":"Hello. Ask me anything related to the document.",
         "good morning":"Good morning. How may I assist you?",
+        "good afternoon":"Good afternoon. How may I assist you?",
         "good evening":"Good evening. How may I assist you?"
     }
 
     q = question.lower().strip()
+
+    # Greeting Responses
 
     if q in greetings:
         return greetings[q]
 
     sentences = split_sentences(document)
 
+    # ---------------- Exact Match Rules ----------------
+
+    keywords = [
+        "name",
+        "age",
+        "email",
+        "phone",
+        "mobile",
+        "city",
+        "address",
+        "education",
+        "college",
+        "university",
+        "skill",
+        "skills",
+        "experience"
+    ]
+
+    for key in keywords:
+
+        if key in q:
+
+            matches = [
+                s for s in sentences
+                if key in s.lower()
+            ]
+
+            if matches:
+                return matches[0]
+
+    # ---------------- TF-IDF ----------------
+
+    cleaned_sentences = [
+        clean_text(s)
+        for s in sentences
+    ]
+
+    cleaned_query = clean_text(question)
+
     vectorizer = TfidfVectorizer(
-        stop_words="english"
+        stop_words="english",
+        lowercase=True,
+        ngram_range=(1,2),
+        max_features=5000
     )
 
-    vectors = vectorizer.fit_transform(
-        sentences + [question]
+    doc_vectors = vectorizer.fit_transform(
+        cleaned_sentences
     )
 
-    similarity = cosine_similarity(
-        vectors[-1],
-        vectors[:-1]
+    query_vector = vectorizer.transform(
+        [cleaned_query]
     )
 
-    best_score = similarity.max()
+    similarities = cosine_similarity(
+        query_vector,
+        doc_vectors
+    )
 
-    best_index = similarity.argmax()
+    best_score = similarities.max()
 
-    # Irrelevant Question Detection
+    # ---------------- Irrelevant Question ----------------
 
     if best_score < 0.15:
+
         return (
-            "I couldn't find any relevant information "
-            "about this question in my knowledge base."
+            "I do not have information related to this question "
+            "in my knowledge base."
         )
 
-    return sentences[best_index]
+    # ---------------- Top 3 Answers ----------------
 
-# ---------------- CHAT HISTORY ----------------
+    top_indices = similarities.argsort()[0][-3:]
+
+    answers = []
+
+    for idx in reversed(top_indices):
+
+        if similarities[0][idx] > 0:
+
+            answers.append(
+                sentences[idx]
+            )
+
+    return " ".join(answers)
+
+# ---------------- CHAT SESSION ----------------
 
 if "messages" not in st.session_state:
 
@@ -131,11 +214,12 @@ if "messages" not in st.session_state:
 
     ]
 
-# ---------------- DISPLAY CHAT ----------------
+# ---------------- SHOW CHAT ----------------
 
 for msg in st.session_state.messages:
 
     with st.chat_message(msg["role"]):
+
         st.write(msg["content"])
 
 # ---------------- INPUT ----------------
@@ -153,15 +237,15 @@ if user_input:
         }
     )
 
-    response = answer_question(
-        text,
+    answer = answer_question(
+        document,
         user_input
     )
 
     st.session_state.messages.append(
         {
             "role":"assistant",
-            "content":response
+            "content":answer
         }
     )
 
