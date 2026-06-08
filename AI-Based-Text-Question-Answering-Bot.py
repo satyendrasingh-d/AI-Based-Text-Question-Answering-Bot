@@ -1,20 +1,17 @@
 import streamlit as st
-import nltk
-import string
+import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ---------------- NLTK ----------------
-nltk.download('punkt', quiet=True)
-
 # ---------------- PAGE CONFIG ----------------
+
 st.set_page_config(
     page_title="AI Research Assistant",
-    page_icon="🤖",
     layout="wide"
 )
 
-# ---------------- CUSTOM CSS ----------------
+# ---------------- CSS ----------------
+
 st.markdown("""
 <style>
 
@@ -23,52 +20,67 @@ footer {visibility:hidden;}
 header {visibility:hidden;}
 
 .stApp{
-    background-color:#0f172a;
+    background:#0B1120;
 }
 
-.main-title{
+.block-container{
+    max-width:950px;
+    padding-top:2rem;
+}
+
+.title{
     text-align:center;
-    font-size:42px;
-    font-weight:700;
     color:white;
-    margin-top:20px;
+    font-size:48px;
+    font-weight:700;
 }
 
-.sub-title{
+.subtitle{
     text-align:center;
-    color:#94a3b8;
-    font-size:18px;
+    color:#94A3B8;
     margin-bottom:30px;
+}
+
+[data-testid="stChatMessage"]{
+    border-radius:15px;
+    padding:10px;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
 # ---------------- HEADER ----------------
-st.markdown(
-    "<div class='main-title'>🤖 AI Research Assistant</div>",
-    unsafe_allow_html=True
-)
 
-st.markdown(
-    "<div class='sub-title'>Ask anything from your document knowledge base</div>",
-    unsafe_allow_html=True
-)
+st.markdown("""
+<div class="title">
+AI Research Assistant
+</div>
+
+<div class="subtitle">
+Document Question Answering System
+</div>
+""", unsafe_allow_html=True)
 
 # ---------------- LOAD DOCUMENT ----------------
-with open("Personal_data.txt", "r", encoding="utf-8") as f:
+
+with open("Personal_data.txt","r",encoding="utf-8") as f:
     text = f.read()
 
+# ---------------- SENTENCE SPLITTER ----------------
+
+def split_sentences(text):
+    return re.split(r'(?<=[.!?])\s+', text)
+
 # ---------------- QA FUNCTION ----------------
-def answer_question(text, question):
+
+def answer_question(document, question):
 
     greetings = {
-        "hi": "Hello! 👋 How can I help you today?",
-        "hello": "Hi there! 👋 How may I assist you?",
-        "hey": "Hello! Ask me anything from the document.",
-        "good morning": "Good Morning! ☀️",
-        "good afternoon": "Good Afternoon! 😊",
-        "good evening": "Good Evening! 🌙"
+        "hi":"Hello. How can I help you today?",
+        "hello":"Hello. What would you like to know?",
+        "hey":"Hello. Ask me anything related to the document.",
+        "good morning":"Good morning. How may I assist you?",
+        "good evening":"Good evening. How may I assist you?"
     }
 
     q = question.lower().strip()
@@ -76,61 +88,80 @@ def answer_question(text, question):
     if q in greetings:
         return greetings[q]
 
-    sentences = nltk.sent_tokenize(text)
+    sentences = split_sentences(document)
 
-    sentences.append(question)
-
-    vectorizer = TfidfVectorizer()
-
-    X = vectorizer.fit_transform(sentences)
-
-    similarities = cosine_similarity(
-        X[-1],
-        X[:-1]
+    vectorizer = TfidfVectorizer(
+        stop_words="english"
     )
 
-    index = similarities.argmax()
+    vectors = vectorizer.fit_transform(
+        sentences + [question]
+    )
 
-    return sentences[index]
+    similarity = cosine_similarity(
+        vectors[-1],
+        vectors[:-1]
+    )
 
-# ---------------- SESSION ----------------
+    best_score = similarity.max()
+
+    best_index = similarity.argmax()
+
+    # Irrelevant Question Detection
+
+    if best_score < 0.15:
+        return (
+            "I couldn't find any relevant information "
+            "about this question in my knowledge base."
+        )
+
+    return sentences[best_index]
+
+# ---------------- CHAT HISTORY ----------------
+
 if "messages" not in st.session_state:
+
     st.session_state.messages = [
+
         {
-            "role": "assistant",
-            "content": "Hello 👋 I am your AI Research Assistant. Ask me anything about the document."
+            "role":"assistant",
+            "content":
+            "Welcome. Ask any question related to the loaded document."
         }
+
     ]
 
 # ---------------- DISPLAY CHAT ----------------
+
 for msg in st.session_state.messages:
 
     with st.chat_message(msg["role"]):
         st.write(msg["content"])
 
-# ---------------- CHAT INPUT ----------------
+# ---------------- INPUT ----------------
+
 user_input = st.chat_input(
-    "Ask your question here..."
+    "Ask a question..."
 )
 
 if user_input:
 
     st.session_state.messages.append(
         {
-            "role": "user",
-            "content": user_input
+            "role":"user",
+            "content":user_input
         }
     )
 
-    answer = answer_question(
+    response = answer_question(
         text,
         user_input
     )
 
     st.session_state.messages.append(
         {
-            "role": "assistant",
-            "content": answer
+            "role":"assistant",
+            "content":response
         }
     )
 
